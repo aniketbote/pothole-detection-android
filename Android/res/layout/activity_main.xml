@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:hint="Enter a name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/chooseBn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="@string/chimg"
+        android:layout_marginTop="25dp"
+
+         />
+
+    <Button
+        android:id="@+id/uploadBn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseBn"
+        android:text="@string/upimg"
+        android:layout_marginTop="15dp" />
+
+   <!-- <Button
+        android:id="@+id/pictureBn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadBn"
+        android:text="@string/takepic"
+        android:layout_marginTop="15dp" />-->
+
+</RelativeLayout>
